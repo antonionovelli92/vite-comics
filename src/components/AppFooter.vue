@@ -107,23 +107,31 @@ export default {
         </section>
         <section class="footer-follow">
             <div class="footer-btn">
-                <button>??</button>
+                <button>SIGN UP NOW!</button>
             </div>
             <div class="footer-icons">
                 <ul>
                     <h4>FOLLOW US</h4>
-                    <li><a href="">
+                    <li>
+                        <a href="">
                             <img src="../assets/img/footer-facebook.png" alt="">
-                        </a></li>
-                    <li><a href="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
                             <img src="../assets/img/footer-facebook.png" alt="">
-                        </a></li>
-                    <li><a href="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
                             <img src="../assets/img/footer-facebook.png" alt="">
-                        </a></li>
-                    <li><a href="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
                             <img src="../assets/img/footer-facebook.png" alt="">
-                        </a></li>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -174,12 +182,38 @@ footer {
         justify-content: space-between;
         align-items: center;
 
+        button {
+            padding: 20px 40px;
+            border: 3px solid #0382F9;
+            background-color: #303030;
+            color: white;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
         ul {
             display: flex;
             flex-direction: row;
             align-items: center;
 
-            h4 {}
+            h4 {
+                color: #0382F9;
+                font-size: 25px;
+                margin-right: 2rem;
+            }
+
+            li {
+                list-style: none;
+
+                img {
+                    max-width: 100%;
+                    height: 35px;
+                    margin: 0 0.5rem;
+
+                }
+
+            }
+
         }
     }
 }
