@@ -14,96 +14,101 @@ export default {
 <template>
     <footer>
         <section class="footer-bg">
-            <ul>
-                <h4>DC COMICS</h4>
-                <li>
-                    <a href="">Characters</a>
-                </li>
-                <li>
-                    <a href="">Comics</a>
-                </li>
-                <li>
-                    <a href="">Movies</a>
-                </li>
-                <li>
-                    <a href="">TV</a>
-                </li>
-                <li>
-                    <a href="">Games</a>
-                </li>
-                <li>
-                    <a href="">Videos</a>
-                </li>
-                <li>
-                    <a href="">News</a>
-                </li>
-                <h4>TITLE</h4>
-                <li>
-                    <a href="">SHOP</a>
-                </li>
-                <li>
-                    <a href="">Shop DC</a>
-                </li>
-                <li>
-                    <a href="">Shop DC Collectibles</a>
-                </li>
-            </ul>
-            <ul>
-                <h4>DC</h4>
-                <li>
-                    <a href="">Terms Of Use</a>
-                </li>
-                <li>
-                    <a href="">Privacy Policy (New)</a>
-                </li>
-                <li>
-                    <a href="">Ad Choices</a>
-                </li>
-                <li>
-                    <a href="">Advertising</a>
-                </li>
-                <li>
-                    <a href="">Jobs</a>
-                </li>
-                <li>
-                    <a href="">Subscriptions</a>
-                </li>
-                <li>
-                    <a href="">Talen Workshops</a>
-                </li>
-                <li>
-                    <a href="">CPSC Certificates</a>
-                </li>
-                <li>
-                    <a href="">Ratings</a>
-                </li>
-                <li>
-                    <a href="">Shop Helps</a>
-                </li>
-                <li>
-                    <a href="">Contact Us</a>
-                </li>
+            <div class="footer-bg-lists">
+                <ul>
+                    <h4>DC COMICS</h4>
+                    <li>
+                        <a href="">Characters</a>
+                    </li>
+                    <li>
+                        <a href="">Comics</a>
+                    </li>
+                    <li>
+                        <a href="">Movies</a>
+                    </li>
+                    <li>
+                        <a href="">TV</a>
+                    </li>
+                    <li>
+                        <a href="">Games</a>
+                    </li>
+                    <li>
+                        <a href="">Videos</a>
+                    </li>
+                    <li>
+                        <a href="">News</a>
+                    </li>
+                    <h4>TITLE</h4>
+                    <li>
+                        <a href="">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="">Shop DC</a>
+                    </li>
+                    <li>
+                        <a href="">Shop DC Collectibles</a>
+                    </li>
+                </ul>
+                <ul>
+                    <h4>DC</h4>
+                    <li>
+                        <a href="">Terms Of Use</a>
+                    </li>
+                    <li>
+                        <a href="">Privacy Policy (New)</a>
+                    </li>
+                    <li>
+                        <a href="">Ad Choices</a>
+                    </li>
+                    <li>
+                        <a href="">Advertising</a>
+                    </li>
+                    <li>
+                        <a href="">Jobs</a>
+                    </li>
+                    <li>
+                        <a href="">Subscriptions</a>
+                    </li>
+                    <li>
+                        <a href="">Talen Workshops</a>
+                    </li>
+                    <li>
+                        <a href="">CPSC Certificates</a>
+                    </li>
+                    <li>
+                        <a href="">Ratings</a>
+                    </li>
+                    <li>
+                        <a href="">Shop Helps</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
 
-            </ul>
-            <ul>
-                <h4>SITES</h4>
-                <li>
-                    <a href="">DC</a>
-                </li>
-                <li>
-                    <a href="">MAD Magazine</a>
-                </li>
-                <li>
-                    <a href="">DC Kids</a>
-                </li>
-                <li>
-                    <a href="">DC Universe</a>
-                </li>
-                <li>
-                    <a href="">DC Power Visa</a>
-                </li>
+                </ul>
+                <ul>
+                    <h4>SITES</h4>
+                    <li>
+                        <a href="">DC</a>
+                    </li>
+                    <li>
+                        <a href="">MAD Magazine</a>
+                    </li>
+                    <li>
+                        <a href="">DC Kids</a>
+                    </li>
+                    <li>
+                        <a href="">DC Universe</a>
+                    </li>
+                    <li>
+                        <a href="">DC Power Visa</a>
+                    </li>
 
-            </ul>
+                </ul>
+            </div>
+            <div class="footer-bg-logo">
+                <img src="../assets/img/dc-logo-bg.png" alt="">
+            </div>
         </section>
         <section class="footer-follow">
             <div class="footer-btn">
@@ -151,25 +156,39 @@ footer {
         background-image: url('../assets/img/footer-bg.jpg');
         object-fit: cover;
         display: flex;
+        justify-content: space-between;
 
-        ul {
-            color: white;
-            margin-right: 5rem;
+        .footer-bg-lists {
+            display: flex;
 
-            h4 {
-                margin: 1rem 0;
-                font-size: 24px;
+            ul {
+                color: white;
+                margin-right: 5rem;
+
+                h4 {
+                    margin: 1rem 0;
+                    font-size: 24px;
+                }
+
+                li {
+                    list-style: none;
+                    margin: 0.25rem 0;
+
+                    a {
+                        text-decoration: none;
+                        color: #869586;
+
+                    }
+                }
             }
 
-            li {
-                list-style: none;
-                margin: 0.25rem 0;
 
-                a {
-                    text-decoration: none;
-                    color: #869586;
+        }
 
-                }
+        .footer-bg-logo {
+            img {
+                width: 800px;
+                height: 498px;
             }
         }
     }
