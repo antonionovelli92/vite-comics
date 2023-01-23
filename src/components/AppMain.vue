@@ -104,9 +104,19 @@ export default {
 
 <template>
     <main>
+        <section class="section-banner">
+            <div class="banner"></div>
+        </section>
         <section class="section-black">
             <div class="comics-container container">
+                <div class="btn-up">
+                    <button>CURRENT SERIES</button>
+                </div>
                 <build-comic v-for="comic in comics" :key="comic.thumb" :comic="comic"></build-comic>
+                <div class="btn-down">
+                    <button>LOAD MORE</button>
+                </div>
+
             </div>
 
 
@@ -118,6 +128,18 @@ export default {
 
 
 <style scoped lang="scss">
+.section-banner {
+    width: 100%;
+
+    .banner {
+        width: 100%;
+        height: 300px;
+        background-image: url('../assets/img/jumbotron.jpg');
+        object-fit: contain;
+    }
+}
+
+
 .section-black {
     width: 100%;
     min-height: 120px;
@@ -129,11 +151,46 @@ export default {
         margin: 0 auto;
         justify-content: center;
 
-        .comic-card {
-            flex-basis: calc(100% / 6);
+        .btn-up {
+            width: 100%;
+            position: relative;
+            top: -30px;
+            left: 0;
+            right: 0;
+
+            button {
+                padding: 15px 30px;
+                border: 1px solid white;
+                background-color: #0382F9;
+                color: white;
+                font-size: 20px;
+                cursor: pointer;
+
+            }
         }
+
+
+        .btn-down button {
+            padding: 10px 40px;
+            border: 1px solid white;
+            background-color: #0382F9;
+            color: white;
+            font-size: 10px;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+
+    }
+
+
+    .comic-card {
+        flex-basis: 13%;
     }
 }
+
 
 .section-blu {
     width: 100%;
