@@ -4,6 +4,7 @@ import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 
 
+
 export default {
   data() {
     return {
@@ -109,19 +110,6 @@ export default {
 </template>
 
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  min-height: 100vh;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1180px;
-}
+<style lang="scss">
+@use '../src/assets/scss/Reset';
 </style>
