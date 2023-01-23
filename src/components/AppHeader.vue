@@ -69,6 +69,7 @@ header {
                 text-transform: uppercase;
                 margin: 0 0.75rem;
 
+
             }
         }
     }

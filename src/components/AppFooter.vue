@@ -124,17 +124,22 @@ export default {
                     </li>
                     <li>
                         <a href="">
-                            <img src="../assets/img/footer-facebook.png" alt="">
+                            <img src="../assets/img/footer-youtube.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="../assets/img/footer-facebook.png" alt="">
+                            <img src="../assets/img/footer-twitter.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="../assets/img/footer-facebook.png" alt="">
+                            <img src="../assets/img/footer-pinterest.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../assets/img/footer-periscope.png" alt="">
                         </a>
                     </li>
                 </ul>
@@ -149,7 +154,7 @@ export default {
 <style lang="scss">
 footer {
     width: 100%;
-    height: 600;
+    min-height: 600px;
 
     .footer-bg {
         height: 500px;
@@ -195,7 +200,7 @@ footer {
 
 
     .footer-follow {
-        height: 100px;
+        min-height: 100px;
         background-color: #303030;
         display: flex;
         justify-content: space-between;
