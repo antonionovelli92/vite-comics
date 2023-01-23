@@ -24,7 +24,7 @@ export default {
 
 <template>
 
-    <header>
+    <header class="container">
         <figure class="nav-logo">
             <img src="../assets/img/dc-logo.png" alt="">
         </figure>
